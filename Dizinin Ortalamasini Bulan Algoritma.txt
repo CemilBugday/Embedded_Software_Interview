@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+double find_array_average(int arr[], int size)
+{
+	int sum = 0;
+
+	for (int i = 0; i < size; ++i)
+		sum += arr[i];
+
+	double average = (double)sum / size;
+
+	return average;
+
+}
+
+int main(void)
+{
+	int arr[] = { 5, 8, 2, 10, 6 };
+	int size = sizeof(arr) / sizeof(arr[0]);
+
+	double average = find_array_average(arr, size);
+
+	printf("Dizinin Ortalamasi : %.2f\n", average);
+
+	return 0;
+
+}

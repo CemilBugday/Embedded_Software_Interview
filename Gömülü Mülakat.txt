@@ -1,0 +1,55 @@
+Gömülü sistem nedir ve ne tür uygulamalarda kullanılır?
+Gömülü sistem, bir bilgisayar sistemidir ve içerisinde yerleştirildiği cihazın belirli bir işlevini yerine getirmek için tasarlanmıştır. Bu sistemler, genellikle özel bir amaç için optimize edilmiş donanım ve yazılım bileşenlerini içerir. Gömülü sistemler, ev aletleri, otomotiv sistemleri, tıbbi cihazlar, endüstriyel kontrol sistemleri, cep telefonları ve diğer birçok elektronik cihazda kullanılır.
+
+Mikrodenetleyici ve mikroişlemci arasındaki fark nedir?
+Mikrodenetleyici, mikroişlemciyle birlikte gelen çevre birimlerine (I/O birimleri, bellek, zamanlayıcılar vb.) sahip entegre bir sistemdir. Bir mikrodenetleyici, genellikle tek bir çip üzerinde bulunur ve bir mikroişlemci çekirdeği, bellek, giriş/çıkış arabirimi ve diğer yardımcı birimleri içerir. Mikrodenetleyiciler, belirli bir uygulama için özel olarak tasarlanmıştır ve tipik olarak gömülü sistemlerde kullanılır.
+
+Mikroişlemci ise, merkezi işlem birimi (CPU) olarak da adlandırılan bir işlemci birimidir. Mikroişlemci, bilgisayarın işlem gücünü sağlar ve komutları yürütür. Genellikle mikroişlemciler, harici çevre birimleri ve bellek ile birleştirilerek bir bilgisayar sistemini oluştururlar. Mikroişlemciler, genel amaçlı bilgisayarlar, sunucular, masaüstü ve dizüstü bilgisayarlar gibi çeşitli sistemlerde kullanılır.
+
+I2C ve SPI gibi haberleşme protokollerini açıklayın.
+I2C (Inter-Integrated Circuit) ve SPI (Serial Peripheral Interface), elektronik cihazlar arasında veri iletişimi sağlamak için kullanılan seri haberleşme protokolleridir.
+
+I2C: I2C, çift yönlü bir haberleşme protokolüdür ve veri iletişimi için iki hat kullanır: veri hattı (SDA) ve saat hattı (SCL). Master (ana) cihaz, veri alışverişini kontrol eder ve birden çok slave (köle) cihaza bağlanabilir. I2C, genellikle düşük hızlarda iletişim için kullanılır ve birçok sensör, EEPROM ve diğer entegre devrelerde yaygın olarak kullanılır.
+
+SPI: SPI, tam çift yönlü bir haberleşme protokolüdür ve tipik olarak bir master cihaz ile birden çok slave cihaz arasında haberleşme sağlar. SPI, dört iletişim hattı kullanır: seri veri (MOSI), seri veri alımı (MISO), saat (SCLK) ve slave seçimi (SS). Master cihaz, veri alışverişini kontrol eder ve birden çok slave cihazına bağlanabilir. SPI, daha yüksek hızlarda iletişim sağlar ve özellikle sensörler, ekranlar, flash bellekler gibi uygulamalarda kullanılır.
+
+DMA (Direct Memory Access) nedir ve ne için kullanılır?
+DMA, bir bilgisayar sisteminde veri transferi işlemini yönetmek için kullanılan bir teknolojidir. DMA, CPU'nun müdahalesi olmadan doğrudan bellek ve çevre birimleri arasında veri transferini gerçekleştirir. Bu, CPU'nun işlem gücünü boşaltır ve daha verimli bir veri transferi sağlar. DMA, yüksek hızlı veri transferi gerektiren uygulamalarda, veri toplama ve dağıtımında ve veri işleme sistemlerinde yaygın olarak kullanılır.
+
+Kesme (interrupt) nedir ve nasıl çalışır?
+Kesme (interrupt), bir bilgisayar sistemine dışarıdan bir olayın bildirildiği bir sinyaldir. Bu olaylar, donanım cihazlarından (örneğin, tuş takımı, fare, zamanlayıcı vb.) veya yazılım tarafından oluşturulan iç olaylardan kaynaklanabilir. Kesme, normal program akışını geçici olarak keser ve sistem, kesme hizmet rutinini (interrupt service routine) çalıştırarak kesmeye yanıt verir. Kesme hizmet rutini, kesmeyi oluşturan olayı işler ve ardından kesme noktasından sonra kesintiye uğrayan programın devam etmesini sağlar. Kesmeler, gerçek zamanlı tepki gerektiren sistemlerde, çoklu görev işletim sistemlerinde ve çeşitli giriş/çıkış olaylarının kontrolünde kullanılır.
+
+Gerçek zamanlı işletim sistemleri (RTOS) hakkında bilgi verin.
+Gerçek zamanlı işletim sistemleri (RTOS), gerçek zamanlı uygulamaların çalıştığı işletim sistemleridir. Gerçek zamanlı uygulamalar, zaman kısıtlamalarına uyan ve belirli bir zaman çerçevesi içinde yanıt vermesi gereken uygulamalardır. RTOS, bu gereksinimleri karşılamak için işlem önceliklerini yönetir, kesmeleri ve zamanlayıcıları kullanır ve görevler arasında zaman paylaşımını sağlar. RTOS, endüstriyel kontrol sistemleri, telekomünikasyon ekipmanları, medikal cihazlar, otomotiv sistemleri ve diğer gerçek zamanlı uygulamalarda yaygın olarak kullanılır.
+
+Sistem seviyesinde güç yönetimi stratejileri nelerdir?
+Sistem seviyesinde güç yönetimi stratejileri, bir sistemde güç tüketimini azaltmak ve enerji verimliliğini artırmak için kullanılan tekniklerdir. Bazı yaygın stratejiler şunlardır:
+
+Uyku Modu (Sleep Mode): İnaktif durumda olan bileşenlerin enerji tüketimini azaltmak için geçici olarak kapatılması.
+Frekans/Voltaj Ölçeklendirme: İşlemci ve diğer bileşenlerin çalışma frekansını ve voltajını dinamik olarak ayarlayarak güç tüketimini düşürme.
+Hızlı Uyanma (Fast Wake-Up): Sistem uyku modundayken, gelen bir kesme veya olayla hızlı bir şekilde uyandırma.
+Dinamik Gerilim ve Frekans Düzenleme (DVFS): İşlemci ve diğer bileşenlerin çalışma frekansını ve voltajını iş yüküne bağlı olarak ayarlama.
+Enerji Yönetimi Protokolleri: Özel protokollerle bileşenler arasında enerji tasarrufu sağlama.
+Bellek yönetimi ve veri hafızası hakkında konuşun.
+Bellek yönetimi, bir bilgisayar sistemindeki bellek kaynaklarının etkin ve verimli bir şekilde kullanılmasını sağlayan işlemleri içerir. Bu, bellek tahsisi, bellek serbest bırakma, bellek paylaşımı ve bellek sıkıştırma gibi işlemleri içerir. Bellek yönetimi, programların bellek kullanımını optimize etmek ve bellekle ilgili hataları önlemek için önemlidir.
+
+Veri hafızası, bir bilgisayar sisteminde verilerin geçici olarak depolandığı bellek bölgesidir. Veri hafızası, değişkenlerin, dizilerin ve diğer veri yapılarının bellekte saklandığı alandır. Programlar çalışırken verilerin doğru bir şekilde yönetilmesi ve erişilmesi için veri hafızası önemlidir. Veri hafızası, sabit boyutlu (dizi) veya değişken boyutlu (dinamik bellek tahsisi) verilerin depolandığı alanları içerir.
+
+Yazılım geliştirme sürecinde kullanılan araçlar ve metodolojiler nelerdir?
+Yazılım geliştirme sürecinde kullanılan araçlar ve metodolojiler şunları içerebilir:
+
+Entegre Geliştirme Ortamı (IDE): Kod yazma, hata ayıklama, derleme ve dağıtım gibi süreçleri kolaylaştıran bir yazılım aracı.
+Sürüm Kontrol Sistemi: Kodun değişikliklerini takip etmek, işbirliği yapmak ve geçmiş sürümlere geri dönmek için kullanılan bir sistem (Git, SVN vb.).
+Test Araçları: Yazılımın doğruluğunu ve işlevselliğini test etmek için kullanılan araçlar (birim testi, entegrasyon testi, performans testi vb.).
+Proje Yönetim Araçları: Proje planlama, görev atama, zaman çizelgesi oluşturma ve işbirliği yapma için kullanılan araçlar (Jira, Trello vb.).
+Agile ve Scrum: Yazılım geliştirme sürecinde esneklik ve işbirliğine dayalı yaklaşımlar (iteratif ve inkremental geliştirme, sprintler, ürün sahibi vb.).
+Hata ayıklama ve hata analizi süreçleri hakkında bilgi verin.
+Hata ayıklama, yazılım veya donanım sistemlerindeki hataları tanımlama ve düzeltme sürecidir. Bu süreçte hata nedenleri belirlenir, sorunlu kod veya donanım bölümleri izlenir ve düzeltmeler yapılır. Hata ayıklama süreci genellikle şu adımları içerir:
+
+Hata Tanımlama: Hatanın belirlenmesi, tekrarlanabilirliği ve tarif edilmesi.
+Hata Yeniden Üretme: Hatanın tekrar oluşturulabilmesi için özel bir ortamda veya test senaryosunda taklit edilmesi.
+Hata Ayıklama Aracı Kullanımı: Hatanın izlenmesi, logların analizi, değişkenlerin izlenmesi gibi işlemler için hata ayıklama araçlarının kullanılması.
+Kod İncelemesi ve Düzeltme: Hatanın kaynağının belirlenmesi ve ilgili kod bölümünde düzeltmelerin yapılması.
+Doğrulama ve Test: Düzeltmelerin etkinliğini doğrulamak için test sürecinin yürütülmesi.
+Hata Analizi ve Raporlama: Hatanın kök nedenlerini belirlemek, benzer hataların önlenmesi için öneriler sunmak ve hata raporlarının hazırlanması.
+Hata analizi, sistemdeki hataların kaynaklarını ve nedenlerini inceleyen bir süreçtir. Bu süreçte hataların türleri, sıklığı, etkileri ve olası çözümler analiz edilir. Hata analizi, gelecekteki hataları önlemek, sistem performansını artırmak ve kullanıcı deneyimini iyileştirmek için önemlidir.
